@@ -13,4 +13,4 @@ alias r := run
     new-item d{{ day }}/input.txt | Out-Null
     cp _template/_t.ts d{{ day }}/p1.ts | Out-Null
     cp _template/_t.ts d{{ day }}/p2.ts | Out-Null
-    echo "Ready for day {{ day }}! Good luck!"
+    echo "$([char]0x1b)[1mReady for day $([char]0x1b)[32m{{ day }}$([char]0x1b)[0;1m!$([char]0x1b)[0m Good luck :)"
